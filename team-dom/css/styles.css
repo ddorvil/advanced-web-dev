@@ -1,0 +1,272 @@
+/*For the assignment I based my inspiration on Havana's website: http://csc174.org/assignment02/havana/ 
+By the colors and font they used, I think they were going for a fun look so I mimicked that in my css. 
+I didn't include the "slide-show" because that isn't what my group's website was about. */
+
+
+.container{
+
+  margin: 25px auto;
+  width: 90%;
+  max-width: 960px;
+  display: grid;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  text-indent: -20px;
+  margin-left: 50px;
+}
+
+.sideWaysNav {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 0px;
+}
+
+/*Speech Bubble for Containers help from this website: https://leaverou.github.io/bubbly/*/
+
+p{
+  padding: 15px;
+}
+
+h2{
+  padding-top: 30px;
+  text-align: center;
+}
+
+.speech-bubble {
+  position: relative;
+  background: #00A1E4;
+  border-radius: .9em;
+
+}
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 31px solid transparent;
+  border-top-color: #00A1E4;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -450.5px;
+  margin-bottom: -31px;
+}
+
+
+.speech-bubble-left {
+  position: relative;
+  background: #DC0073;
+  border-radius: .9em;
+
+}
+
+.speech-bubble-left:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 31px solid transparent;
+  border-top-color: #DC0073;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: 420.5px;
+  margin-bottom: -31px;
+}
+body {
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: 'Cabin Sketch', cursive;
+}
+
+/* Style the header */
+.header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+ /**** BASE - NAV ****/
+nav ul {
+  /*text-indent: 0;*/
+  margin-right: -20px;
+ /* display: flex;
+  justify-content: flex-end;*/
+}
+
+nav li {
+/*  font-family: 'Cabin Sketch', cursive;
+  font-size: x-large;
+  background-color: white;
+  padding: 10px 5px 10px 5px;*/
+  margin-right: 20px;
+}
+
+.menu {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu ul {
+  margin-left: 35px;
+  /*margin-top: 3px;
+  border: 1px;
+  display: block;*/
+}
+.menu li {
+ 
+/*  border: 1px solid;*/
+  box-shadow: 3px 3px grey;
+  padding: 8px 8px 8px 8px;
+  background: #89cff0;
+  
+}
+.menu li {
+  margin-left: -60px;
+  margin-bottom: 10px;
+}
+
+/*help from W3C*/
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 50px;
+  float: right;
+  align-items: center;
+ 
+
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px;
+  max-height: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.cd-section {
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.45);
+  margin-bottom: 30px;
+  border-radius: 8px;
+
+}
+
+img {
+  height: 175px;
+  width: 175px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  border-radius: .8em;
+
+}
+
+header h1 {
+  color: #F5B700
+}
+
+header img {
+  border-radius: 8px;
+}
+
+/*aside {
+  text-align: center;
+  padding: 10px 20px;
+}*/
+
+aside ul { color: black; }
+
+h1{
+  text-align: center;
+  padding: 10px;
+}
+
+ul li {
+  
+  font-size: 25px;
+  padding: 12px; 
+  display: table-caption;
+
+}
+
+
+ li a {
+ color: white;
+ text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+  text-align: center;
+
+}
+
+/**** BASE - ASIDE ****/
+aside {
+  margin-left: -30px;
+  margin-top: 10px;
+  margin-bottom: -30px;
+  align-self: end;
+}
+
+aside ul {
+  font-size: 20px;
+}
+
+
+/*Used this website for nav animation: https://designshack.net/articles/css/creating-a-fun-animated-navigation-menu-with-pure-css/
+*/ 
+
+li a:hover {
+ color: #7eb9be;
+ -webkit-transform: rotate(-10deg) scale(1.2);
+ -moz-transform: rotate(-10deg) scale(1.2);
+ -o-transform: rotate(-10deg) scale(1.2);
+}
+
+.left a:hover {
+ -webkit-transform: rotate(-10deg) scale(1.2);
+ -moz-transform: rotate(-10deg) scale(1.2);
+ -o-transform: rotate(-10deg) scale(1.2);
+}
+ 
+.right a:hover {
+ -webkit-transform: rotate(10deg) scale(1.2);
+ -moz-transform: rotate(10deg) scale(1.2);
+ -o-transform: rotate(10deg) scale(1.2);
+}
+
+.active {font-weight: bold;
+         color: #7eb9be;}
